@@ -16,11 +16,12 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule, MatCardModule,MatButtonModule,MatGridListModule, MatDialogModule],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, MatCardModule,MatButtonModule,MatGridListModule, MatDialogModule, MatMenuModule],
 
   declarations: [ AppComponent, HelloComponent, EmployeeComponent, UpdateComponent, DepartmentComponent, MenuHeaderComponent, ProjectListComponent ],
 

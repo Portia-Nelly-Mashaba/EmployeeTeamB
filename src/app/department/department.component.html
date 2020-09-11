@@ -1,3 +1,15 @@
-<p>
-department works!
-</p>
+<button mat-button [matMenuTriggerFor]="aboveMenu">IT</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu">HR</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+ 
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu" RoutesLink="employee">Accounting</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+</mat-menu>
+
+
