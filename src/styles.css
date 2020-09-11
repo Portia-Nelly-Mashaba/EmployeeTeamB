@@ -1,1 +1,4 @@
 /* Add application styles & imports to this file! */
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700');
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
