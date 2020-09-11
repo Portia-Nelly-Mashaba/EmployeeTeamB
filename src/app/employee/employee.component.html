@@ -3,3 +3,23 @@ employee works!
 </p>
 <li>Employee list</li>
 
+<mat-grid-list cols="3" rowHeight="500px">
+  <mat-grid-tile *ngFor="let Employees of Company_Employees">
+    <mat-card class="card">
+  <img class="img-container"  mat-card-image src="{{Employees.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
+  <mat-card-content>
+       <h1>{{Employees.FirstName}} {{Employees.LastName}} </h1>
+    <p class="title">{{Employees.Title}}</p>
+    <p>
+      {{Employees.Age}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent">Update</button>
+      <button mat-raised-button color="warn">Delete</button>
+  </mat-card-actions>
+</mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+
