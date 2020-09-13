@@ -1,3 +1,4 @@
+ <h2>Add New Employee to Dashboard</h2>
  <mat-grid-list  cols = "1" rowHeight="500px">
   <mat-grid-tile>
     <mat-card class="card">
@@ -26,17 +27,23 @@
   </mat-form-field>
   <br>
   <mat-form-field appearance="fill">
-    <mat-label>Age</mat-label>
+    <mat-label>Title</mat-label>
     <textarea matInput></textarea>
   </mat-form-field>
+  <br>
+  
+    <mat-form-field appearance="fill">
+    <mat-label>Age</mat-label>
+    <input matInput>
+  </mat-form-field>
+  <br>
+
+    <input type="file" #imageInput accept="image/*" (change)="processFile(imageInput)">
 
 </div>
+<br>
   <mat-card-actions>
-   <label class="image-upload-container btn btn-bwm">
-<span>Select Image: </span>
-<input type="file" #imageInput accept="image/*" (change)="processFile(imageInput)">
-</label> 
-    <button mat-raised-button color="accent">Add</button>
+    <button mat-raised-button color="primary">Add</button>
       
   </mat-card-actions>
 </mat-card>
