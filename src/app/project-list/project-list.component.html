@@ -1,4 +1,9 @@
+ <mat-grid-list  cols = "1" rowHeight="500px">
+  <mat-grid-tile>
+    <mat-card class="card">
+
 <div class="example-container">
+ 
   <mat-form-field appearance="fill">
     <mat-label>First Name</mat-label>
     <input matInput>
@@ -24,4 +29,18 @@
     <mat-label>Age</mat-label>
     <textarea matInput></textarea>
   </mat-form-field>
+
 </div>
+  <mat-card-actions>
+   <label class="image-upload-container btn btn-bwm">
+<span>Select Image: </span>
+<input type="file" #imageInput accept="image/*" (change)="processFile(imageInput)">
+</label> 
+    <button mat-raised-button color="accent">Add</button>
+      
+  </mat-card-actions>
+</mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+
