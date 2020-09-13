@@ -34,14 +34,14 @@
 
 <h1>HR Department</h1>
 <mat-grid-list cols="2" rowHeight="500px">
-  <mat-grid-tile *ngFor="let Acc of Acounting_Department">
+  <mat-grid-tile *ngFor="let HR of HR_Department">
     <mat-card class="card">
-  <img class="img-container"  mat-card-image src="{{Acc.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
+  <img class="img-container"  mat-card-image src="{{HR.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
   <mat-card-content>
-       <h1>{{Acc.FirstName}} {{Acc.LastName}} </h1>
-    <p class="title">{{Acc.Title}}</p>
+       <h1>{{HR.FirstName}} {{HR.LastName}} </h1>
+    <p class="title">{{HR.Title}}</p>
     <p>
-      {{Acc.Age}}
+      {{HR.Age}}
     </p>
   </mat-card-content>
 
