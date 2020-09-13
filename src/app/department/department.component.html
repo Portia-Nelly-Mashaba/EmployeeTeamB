@@ -1,15 +1,50 @@
-<button mat-button [matMenuTriggerFor]="aboveMenu">IT</button>
-<mat-menu #aboveMenu="matMenu" yPosition="above">
-  
-</mat-menu>
+ <h1>IT Department</h1>
+<mat-grid-list cols="2" rowHeight="500px">
+  <mat-grid-tile *ngFor="let IT of It_department">
+    <mat-card class="card">
+  <img class="img-container"  mat-card-image src="{{IT.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
+  <mat-card-content>
+       <h1>{{IT.FirstName}} {{IT.LastName}} </h1>
+    <p class="title">{{IT.Title}}</p>
+    <p>
+      {{IT.Age}}
+    </p>
+  </mat-card-content>
 
-<button mat-button [matMenuTriggerFor]="belowMenu">HR</button>
-<mat-menu #belowMenu="matMenu" yPosition="below">
- 
-</mat-menu>
+</mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
 
-<button mat-button [matMenuTriggerFor]="beforeMenu" RoutesLink="employee">Accounting</button>
-<mat-menu #beforeMenu="matMenu" xPosition="before">
-</mat-menu>
+ <h1>Accounting Department</h1>
+<mat-grid-list cols="2" rowHeight="500px">
+  <mat-grid-tile *ngFor="let Acc of Acounting_Department">
+    <mat-card class="card">
+  <img class="img-container"  mat-card-image src="{{Acc.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
+  <mat-card-content>
+       <h1>{{Acc.FirstName}} {{Acc.LastName}} </h1>
+    <p class="title">{{Acc.Title}}</p>
+    <p>
+      {{Acc.Age}}
+    </p>
+  </mat-card-content>
 
+</mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
 
+<h1>HR Department</h1>
+<mat-grid-list cols="2" rowHeight="500px">
+  <mat-grid-tile *ngFor="let Acc of Acounting_Department">
+    <mat-card class="card">
+  <img class="img-container"  mat-card-image src="{{Acc.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
+  <mat-card-content>
+       <h1>{{Acc.FirstName}} {{Acc.LastName}} </h1>
+    <p class="title">{{Acc.Title}}</p>
+    <p>
+      {{Acc.Age}}
+    </p>
+  </mat-card-content>
+
+</mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
