@@ -21,13 +21,14 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatOptionModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
- import {MatIconModule} from '@angular/material/icon';
+import {MatIconModule} from '@angular/material/icon';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule, MatCardModule,MatButtonModule,MatGridListModule, MatDialogModule, MatMenuModule,MatFormFieldModule, MatInputModule,MatOptionModule, MatSelectModule, MatIconModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, MatCardModule,MatButtonModule,MatGridListModule, MatDialogModule, MatMenuModule,MatFormFieldModule, MatInputModule,MatOptionModule, MatSelectModule, MatIconModule, BrowserAnimationsModule ],
 
   declarations: [ AppComponent, HelloComponent, EmployeeComponent, UpdateComponent, DepartmentComponent, MenuHeaderComponent, ProjectListComponent ],
 
